@@ -45,6 +45,7 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+console.log("Test")
 
 /*
 app.listen(port, function() {
