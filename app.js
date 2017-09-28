@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var  port =4000;
+var port = process.env.PORT || 4000;
 
 var index = require('./routes/index');
 //var users = require('./routes/users');
@@ -45,10 +45,8 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-console.log("Test")
 
-/*
+
 app.listen(port, function() {
   console.log("Server(%s) is running on '%s' %d port",  port);
 });
-*/
